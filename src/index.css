@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    border-bottom: 1px solid #ececec;
+}
+
+.navbar-brand > img {
+    width: 125px;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home-container {
+    margin-top: 220px;
+}
+
+.card {
+    border: none;
+}
