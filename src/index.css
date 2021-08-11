@@ -24,3 +24,60 @@ body {
 .card {
     border: none;
 }
+
+.widget {
+    margin-bottom: 60px;
+}
+
+.widget h5 {
+    margin-bottom: 40px;
+}
+
+.sidebar h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.categories-list {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-list li {
+    margin-bottom: 8px;
+}
+
+.categories-list li a {
+    color: #6f6f6f;
+    text-decoration: none;
+}
+
+.categories-list li a:hover {
+    color: #2196f3;
+}
+
+.recent-media a {
+    color: #232323;
+    font-size: 15px;
+}
+
+.recent-media p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6f6f6f;
+}
+
+.tags-container button {
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+.tags-container button:hover {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.follow-us-icons svg {
+    margin-right: 12px;
+    color: #232323;
+}
