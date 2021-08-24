@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
     render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
                         <Route exact path="/category/:category" component={ Home } />
                     </Switch>
                 </Router>
+                <Footer />
             </div>
         )
     }
