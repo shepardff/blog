@@ -4,6 +4,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
 input {
     border: none;
     outline: none;
@@ -23,7 +32,7 @@ input {
     font-weight: 600;
 }
 
-.home-container {
+.main-container {
     margin-top: 220px;
 }
 
@@ -106,4 +115,26 @@ input {
 
 .footer-input {
     font-size: 14px;
+}
+
+.footer-social {
+    margin-top: 70px;
+}
+
+/* About */
+
+.about p, .about li {
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.about-title {
+    font-size: 22px;
+    color: #232323;
+    font-weight: 600;
+}
+
+.about-icon {
+    color: #2196f3;
 }
