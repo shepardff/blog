@@ -33,28 +33,28 @@ const Sidebar = () => {
                     <Media className="mb-2 recent-media">
                         <img src={recent1} className="mr-3" alt=""/>
                         <Media.Body>
-                            <a href={"she-is-known-for-playing"}>She is known for playing</a>
+                            <a href={"blog-post"}>She is known for playing</a>
                             <p>20 Mar, 2020</p>
                         </Media.Body>
                     </Media>
                     <Media className="mb-2 recent-media">
                         <img src={recent2} className="mr-3" alt=""/>
                         <Media.Body>
-                            <a href={"craft-a-life-you-love"}>Craft a life you love</a>
+                            <a href={"blog-post"}>Craft a life you love</a>
                             <p className="font-weight-light">12 Mar, 2020</p>
                         </Media.Body>
                     </Media>
                     <Media className="mb-2 recent-media">
                         <img src={recent3} className="mr-3" alt=""/>
                         <Media.Body>
-                            <a href={"wonderland-of-ice-place"}>Wonderland of ice place</a>
+                            <a href={"blog-post"}>Wonderland of ice place</a>
                             <p className="font-weight-light">17 Feb, 2020</p>
                         </Media.Body>
                     </Media>
                     <Media className="mb-2 recent-media">
                         <img src={recent4} className="mr-3" alt=""/>
                         <Media.Body>
-                            <a href={"publish-your-passions"}>Publish your passions</a>
+                            <a href={"blog-post"}>Publish your passions</a>
                             <p className="font-weight-light">12 Jan, 2020</p>
                         </Media.Body>
                     </Media>
