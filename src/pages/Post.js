@@ -3,13 +3,15 @@ import React from "react";
 import blog1 from "../assets/images/blog-1.jpg";
 import {Check2} from "react-bootstrap-icons";
 import Social from "../components/Social";
+import Slide from "../components/Slide";
+import Comments from "../components/Comments";
 
 const Post = () => {
     return (
         <div className="blog">
             <Container className="main-container">
-                <Row className="justify-content-center border-bottom pb-5">
-                    <Col lg={10} md={11}>
+                <Row className="justify-content-center pb-3">
+                    <Col lg={10} md={11} className="border-bottom">
                         <Image src={blog1} fluid />
                         <h1 className="mt-5 mb-3">How to start a successful photography business</h1>
                         <p>
@@ -66,10 +68,16 @@ const Post = () => {
                         </p>
                     </Col>
                 </Row>
-                <Row className="follow-us-icons justify-content-center pt-3">
+                <Row className="follow-us-icons justify-content-center">
                     <span className="mr-3 blog-share">Share this article:</span> <Social />
                 </Row>
+                <Row className="justify-content-center mt-5">
+                    <Col lg={10} md={11}>
+                        <Comments />
+                    </Col>
+                </Row>
             </Container>
+            <Slide />
         </div>
     )
 }
