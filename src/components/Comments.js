@@ -1,6 +1,7 @@
-import {Image, Media} from "react-bootstrap";
+import {Button, Col, Form, Image, Media} from "react-bootstrap";
 import comment1 from "../assets/images/comment1.png";
 import comment2 from "../assets/images/comment2.png";
+import {ReplyFill} from "react-bootstrap-icons";
 
 const Comments = () => {
     return (
@@ -21,6 +22,7 @@ const Comments = () => {
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa
                         qui officia deserunt mollit anim id est laborum.
                     </p>
+                    <a href={"#reply"} className="comment-reply"><ReplyFill className="mr-1" /> Reply</a>
 
                     <Media className="mt-5">
                         <Image
@@ -37,10 +39,34 @@ const Comments = () => {
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
                                 qui officia deserunt mollit anim id est laborum.
                             </p>
+                            <a href={"#reply"} className="comment-reply"><ReplyFill className="mr-1" /> Reply</a>
+
                         </Media.Body>
                     </Media>
                 </Media.Body>
             </Media>
+
+            <h5 className="mt-5 mb-3">Post a comment</h5>
+
+            <Form className="mb-5">
+                <Form.Row>
+                    <Form.Group as={Col} controlId="formGridName">
+                        <Form.Control placeholder="Name" />
+                    </Form.Group>
+
+                    <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Control type="email" placeholder="Email" />
+                    </Form.Group>
+                </Form.Row>
+
+                <Form.Group controlId="formGridMessage">
+                    <Form.Control as="textarea" rows={4} placeholder="Message"/>
+                </Form.Group>
+
+                <Button variant="primary" type="submit">
+                    Send Message
+                </Button>
+            </Form>
         </div>
     )
 }

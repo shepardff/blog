@@ -198,3 +198,12 @@ input {
 .comment-name {
     font-weight: 600;
 }
+
+.comment-reply {
+    color: #6f6f6f;
+}
+
+.comment-reply:hover {
+    color: #2196f3;
+    text-decoration: none;
+}
