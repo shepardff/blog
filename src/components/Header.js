@@ -22,7 +22,7 @@ const Header = () => {
                     </Nav>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-primary">Search</Button>
+                        <Button className="header-button">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>

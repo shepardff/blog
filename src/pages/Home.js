@@ -73,7 +73,7 @@ class Home extends React.Component {
                             </Card>
                         </Col>
 
-                        <Col lg={4} md={12} className="pl-lg-5 sidebar">
+                        <Col lg={4} md={12} className="pl-lg-5 mt-md-5 mt-lg-0 sidebar">
                             <Sidebar />
                         </Col>
                     </Row>

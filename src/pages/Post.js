@@ -8,7 +8,7 @@ import Comments from "../components/Comments";
 
 const Post = () => {
     return (
-        <div className="blog">
+        <div className="post">
             <Container className="main-container">
                 <Row className="justify-content-center pb-3">
                     <Col lg={10} md={11} className="border-bottom">
@@ -43,13 +43,13 @@ const Post = () => {
                             beatae vitae dicta sunt explicabo.
                         </p>
                         <Row className="align-items-center">
-                            <Col sm={5}>
+                            <Col md={5}>
                                 <p className="post-quote">
                                     “ Always use active voice over the passive one.Come up with a
                                     catchy and distinctive phrases that will set you apart from the others ”
                                 </p>
                             </Col>
-                            <Col sm={7}>
+                            <Col md={7}>
                                 <p>
                                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                     accusantium doloremque laudantium, totam rem aperiam, eaque
@@ -69,7 +69,7 @@ const Post = () => {
                     </Col>
                 </Row>
                 <Row className="follow-us-icons justify-content-center">
-                    <span className="mr-3 blog-share">Share this article:</span> <Social />
+                    <span className="mr-3 post-share">Share this article:</span> <Social />
                 </Row>
                 <Row className="justify-content-center mt-5">
                     <Col lg={10} md={11}>

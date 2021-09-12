@@ -32,7 +32,7 @@ const About = () => {
                             <li><Check2 className="mr-3 about-icon" size={20} />Excepteur sint occaecat</li>
                         </ul>
                     </Col>
-                    <Col lg={4} md={12} className="pl-lg-5 sidebar">
+                    <Col lg={4} md={12} className="pl-lg-5 mt-md-5 mt-lg-0 sidebar">
                         <Sidebar />
                     </Col>
                 </Row>
