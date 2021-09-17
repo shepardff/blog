@@ -1,4 +1,4 @@
-import {Button, Image, Media} from "react-bootstrap";
+import { Button, Image, Media } from "react-bootstrap";
 import Social from "./Social";
 import React from "react";
 import axios from "axios";
