@@ -30,10 +30,10 @@ class Sidebar extends React.Component {
         return recent.map(elem => {
             return (
                 <Media className="mb-2 recent-media">
-                    <img src={"/static/media/" + elem.img} className="mr-3" alt=""/>
+                    <img src={ "/static/media/" + elem.img } className="mr-3" alt=""/>
                     <Media.Body>
-                        <a href={"blog-post"}>{elem.title}</a>
-                        <p>{elem.date}</p>
+                        <a href={"blog-post"}>{ elem.title }</a>
+                        <p>{ elem.date }</p>
                     </Media.Body>
                 </Media>
             )

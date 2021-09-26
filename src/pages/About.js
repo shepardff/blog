@@ -1,4 +1,4 @@
-import {Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Sidebar from "../components/Sidebar";
 import React from "react";
 import Slide from "../components/Slide";

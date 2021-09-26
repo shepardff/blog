@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, Col, Container, Row} from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import blog1 from "../assets/images/blog-1.jpg";
 import blog2 from "../assets/images/blog-2.jpg";
