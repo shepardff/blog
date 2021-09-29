@@ -16,7 +16,7 @@ class Home extends React.Component {
                     <Row>
                         <Col lg={8} md={12}>
                             <Card className="mb-5">
-                                <Card.Img variant="top" src={blog1} />
+                                <Card.Img variant="top" src={ blog1 } />
                                 <Card.Body>
                                     <Card.Title><Card.Link href="/blog-post" className="text-dark">How to start a successful photography business</Card.Link></Card.Title>
                                     <Card.Text className="font-weight-light text-secondary">
@@ -30,7 +30,7 @@ class Home extends React.Component {
                                 </Card.Body>
                             </Card>
                             <Card className="mb-5">
-                                <Card.Img variant="top" src={blog2} />
+                                <Card.Img variant="top" src={ blog2 } />
                                 <Card.Body>
                                     <Card.Title><Card.Link href="/blog-post" className="text-dark">How you see things in powerful life</Card.Link></Card.Title>
                                     <Card.Text className="font-weight-light text-secondary">
@@ -44,7 +44,7 @@ class Home extends React.Component {
                                 </Card.Body>
                             </Card>
                             <Card className="mb-5">
-                                <Card.Img variant="top" src={blog3} />
+                                <Card.Img variant="top" src={ blog3 } />
                                 <Card.Body>
                                     <Card.Title><Card.Link href="/blog-post" className="text-dark">You work your way to creative thinking</Card.Link></Card.Title>
                                     <Card.Text className="font-weight-light text-secondary">
@@ -58,7 +58,7 @@ class Home extends React.Component {
                                 </Card.Body>
                             </Card>
                             <Card className="mb-5">
-                                <Card.Img variant="top" src={blog4} />
+                                <Card.Img variant="top" src={ blog4 } />
                                 <Card.Body>
                                     <Card.Title><Card.Link href="/blog-post" className="text-dark">Satisfaction of making and fixing their own things</Card.Link></Card.Title>
                                     <Card.Text className="font-weight-light text-secondary">

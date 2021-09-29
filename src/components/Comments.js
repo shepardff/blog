@@ -1,100 +1,45 @@
-import { Button, Col, Form, Image, Media } from "react-bootstrap";
-import comment1 from "../assets/images/comment1.png";
-import comment2 from "../assets/images/comment2.png";
-import { ReplyFill } from "react-bootstrap-icons";
+import {Button, Col, Form, Image, Media} from "react-bootstrap";
+import {ReplyFill} from "react-bootstrap-icons";
 import React from "react";
 
 
 class Comments extends React.Component {
 
     createCommentList(obj) {
-        for (let value of Object.values(obj)) {
-            if (Array.isArray(value)) {
-                for (let obj of value) {
-                    this.createCommentList(obj)
-                }
-            } else {
-                console.log(value)
-            }
-            // if (Array.isArray(value)) {
-            //     console.log(value);
-            //     this.createCommentList(value);
-            // } else {
-            //     console.log(value)
-            // }
-        }
-
-        // if (Array.isArray(comments)) {
-        //     return (
-        //         <Media className="mt-5">
-        //             <Image
-        //                 width={68}
-        //                 height={68}
-        //                 src={ comments.image }
-        //                 roundedCircle
-        //                 alt={ comments.name }
-        //                 className="mr-4"
-        //             />
-        //             <Media.Body>
-        //                 <p className="comment-name mb-0">{ comments.name }</p>
-        //                 <p className="comment-text">
-        //                     { comments.text }
-        //                 </p>
-        //                 <a href={"#reply"} className="comment-reply"><ReplyFill className="mr-1" /> Reply</a>
-        //             </Media.Body>
-        //         </Media>
-        //     )
-        // } else {
-        //
-        // }
-    }
-
-    render() {
-        for (let obj of this.props.comments) {
-            this.createCommentList(obj)
-        }
-
-        return (
-            <div className="comments">
-                <h5>Comments</h5>
+        return obj.map(elem => {
+            return (
                 <Media className="mt-5">
                     <Image
                         width={68}
                         height={68}
-                        src={comment1}
+                        src={ elem.image }
                         roundedCircle
-                        alt="Alex Joyrina"
+                        alt={ elem.name }
                         className="mr-4"
                     />
                     <Media.Body>
-                        <p className="comment-name mb-0">Alex Joyrina</p>
+                        <p className="comment-name mb-0">{ elem.name }</p>
                         <p className="comment-text">
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                            qui officia deserunt mollit anim id est laborum.
+                            { elem.text }
                         </p>
-                        <a href={"#reply"} className="comment-reply"><ReplyFill className="mr-1" /> Reply</a>
+                        <a href={"#reply"} className="comment-reply"><ReplyFill className="mr-1"/> Reply</a>
 
-                        <Media className="mt-5">
-                            <Image
-                                width={68}
-                                height={68}
-                                src={comment2}
-                                roundedCircle
-                                alt="Jama Karleny"
-                                className="mr-4"
-                            />
-                            <Media.Body>
-                                <p className="comment-name mb-0">Jama Karleny</p>
-                                <p className="comment-text">
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                    qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <a href={"#reply"} className="comment-reply"><ReplyFill className="mr-1" /> Reply</a>
-
-                            </Media.Body>
-                        </Media>
+                        { Array.isArray(elem.answer) ? this.createCommentList(elem.answer) : false }
                     </Media.Body>
                 </Media>
+            )
+        });
+    }
+
+    render() {
+
+        const comments = this.createCommentList(this.props.comments);
+
+
+        return (
+            <div className="comments">
+                <h5>Comments</h5>
+                { comments }
 
                 <h5 className="mt-5 mb-3">Post a comment</h5>
 
@@ -121,5 +66,7 @@ class Comments extends React.Component {
         )
     }
 }
+
+
 
 export default Comments;
