@@ -1,11 +1,15 @@
-import { Container, Row, Col, Image } from "react-bootstrap";
 import React from "react";
-import blog1 from "../assets/images/blog-1.jpg";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { Check2 } from "react-bootstrap-icons";
+import axios from "axios";
+
+
 import Social from "../components/Social";
 import Slide from "../components/Slide";
 import Comments from "../components/Comments";
-import axios from "axios";
+
+import blog1 from "../assets/images/blog-1.jpg";
+
 
 class Post extends React.Component {
     constructor(props) {

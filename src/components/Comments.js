@@ -1,6 +1,6 @@
+import React from "react";
 import {Button, Col, Form, Image, Media} from "react-bootstrap";
 import {ReplyFill} from "react-bootstrap-icons";
-import React from "react";
 
 
 class Comments extends React.Component {

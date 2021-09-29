@@ -1,8 +1,9 @@
+import { Col, Container, Row, Form, Button } from "react-bootstrap";
+import { EnvelopeFill, GeoAltFill, TelephoneFill } from "react-bootstrap-icons";
+
 import Map from "../components/Map";
-import {Col, Container, Row, Form, Button} from "react-bootstrap";
 import Slide from "../components/Slide";
 import Sidebar from "../components/Sidebar";
-import {EnvelopeFill, GeoAltFill, TelephoneFill} from "react-bootstrap-icons";
 
 const Contacts = () => {
     return (

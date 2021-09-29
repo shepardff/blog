@@ -1,7 +1,8 @@
-import { Button, Image, Media } from "react-bootstrap";
-import Social from "./Social";
 import React from "react";
+import { Button, Image, Media } from "react-bootstrap";
 import axios from "axios";
+
+import Social from "./Social";
 
 class Sidebar extends React.Component {
     constructor(props) {

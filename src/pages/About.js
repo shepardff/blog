@@ -1,9 +1,11 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Sidebar from "../components/Sidebar";
 import React from "react";
-import Slide from "../components/Slide";
+import { Col, Container, Row } from "react-bootstrap";
 import axios from "axios";
 import ReactHtmlParser from "react-html-parser";
+
+import Sidebar from "../components/Sidebar";
+import Slide from "../components/Slide";
+
 
 class About extends React.Component {
     constructor(props) {

@@ -1,5 +1,6 @@
 import React from "react";
-import {Facebook, Instagram, Linkedin, Reddit, Twitter} from "react-bootstrap-icons";
+import { Facebook, Instagram, Linkedin, Reddit, Twitter } from "react-bootstrap-icons";
+
 
 const Social = () => {
     return (

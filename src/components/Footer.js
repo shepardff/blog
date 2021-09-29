@@ -1,7 +1,10 @@
-import {Col, Container, NavbarBrand, Row} from "react-bootstrap";
-import logo from "../assets/images/logo.png";
 import React from "react";
+import { Col, Container, NavbarBrand, Row } from "react-bootstrap";
+
 import Social from "./Social";
+
+import logo from "../assets/images/logo.png";
+
 
 const Footer = () => {
     return (

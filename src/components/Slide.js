@@ -1,4 +1,6 @@
-import {Splide, SplideSlide} from "@splidejs/react-splide";
+import React from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+
 import slide1 from "../assets/images/slide1.jpg";
 import slide2 from "../assets/images/slide2.jpg";
 import slide3 from "../assets/images/slide3.jpg";
@@ -7,7 +9,7 @@ import slide5 from "../assets/images/slide5.jpg";
 import slide6 from "../assets/images/slide6.jpg";
 import slide7 from "../assets/images/slide7.jpg";
 import slide8 from "../assets/images/slide8.jpg";
-import React from "react";
+
 
 const Slide = () => {
     return (
